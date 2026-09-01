@@ -9,7 +9,7 @@ MeowArch 是一个轻量、清爽的 Arch Linux 主题宣传首页。项目使�
 
 - 响应式桌面端与移动端布局
 - 页面顶部流式导航，向下滚动后自动缩小并悬浮
-- 移动端汉堡菜单、锚点导航和主题切换
+- 移动端汉堡菜单与锚点导航，桌面端主题切换
 - 使用同一份简化图标派生的浏览器图标、Apple Touch Icon 和品牌图标
 - GitHub Pages 自动部署 workflow
 
@@ -110,8 +110,8 @@ git push origin main
 
 首次部署步骤：
 
-1. 推送代码后打开仓库的 **Actions** 页面，等待 `Deploy MeowArch to GitHub Pages` 完成。
-2. 如果 GitHub 要求选择发布来源，进入 **Settings → Pages**，将 **Source** 设置为 **GitHub Actions**。
+1. 进入仓库的 **Settings → Pages → Build and deployment**，将 **Source** 设置为 **GitHub Actions**。如果已经通过 API 或仓库设置完成，这一步无需重复。
+2. 推送代码后打开仓库的 **Actions** 页面，等待 `Deploy MeowArch to GitHub Pages` 完成。
 3. 部署成功后，站点地址通常是：
 
    ```text

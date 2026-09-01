@@ -59,12 +59,13 @@ gh repo view --web
 3. `actions/upload-pages-artifact` 上传项目根目录的静态文件。
 4. `actions/deploy-pages` 发布站点。
 
+第一次推送前，先进入仓库的 **Settings → Pages → Build and deployment**，将 **Source** 设置为 **GitHub Actions**。如果已经通过 API 设置了 `build_type=workflow`，可以直接等待 workflow 运行。
+
 第一次推送后：
 
 1. 打开仓库的 **Actions** 页面。
 2. 等待 `Deploy MeowArch to GitHub Pages` 完成。
-3. 进入 **Settings → Pages**，确认 Source 为 **GitHub Actions**。
-4. 从 workflow 的 `page_url` 输出或仓库 Pages 页面复制最终网址。
+3. 从 workflow 的 `page_url` 输出或仓库 Pages 页面复制最终网址。
 
 默认项目站点地址格式：
 
